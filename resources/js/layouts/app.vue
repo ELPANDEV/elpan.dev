@@ -3,7 +3,9 @@
     <img class="img" src="https://tstalent.net/site/images/portada.jpg">
     <v-header />
     <v-body>
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
     </v-body>
   </div>
 </template>

@@ -1,22 +1,16 @@
 <template>
   <nav class="nav">
-    <router-link :to="{ name: 'portfolio' }" :class="$route.name == 'portfolio' ? 'active' : ''">
+    <router-link :to="{ name: 'portfolio' }" :class="this.$route.path.includes('portfolio') ? 'active' : ''">
       {{ $lang.portfolio[$lang.lang] }}
     </router-link>
-    <router-link :to="{ name: 'about' }" :class="$route.name == 'about' ? 'active' : ''">
+    <router-link :to="{ name: 'education' }" :class="this.$route.path.includes('about') ? 'active' : ''">
       {{ $lang.about[$lang.lang] }}
     </router-link>
-    <router-link :to="{ name: 'contact' }" :class="$route.name == 'contact' ? 'active' : ''">
+    <router-link :to="{ name: 'whatsapp' }" :class="this.$route.path.includes('contact') ? 'active' : ''">
       {{ $lang.contact[$lang.lang] }}
     </router-link>
   </nav>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss" scoped>
 @import '../../../../sass/variables';
