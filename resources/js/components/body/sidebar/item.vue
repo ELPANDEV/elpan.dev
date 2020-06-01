@@ -1,6 +1,8 @@
 <template>
   <router-link class="item" :class="$route.name == item.route ? 'active' : ''" :to="{ name: item.route }">
-    <img :src="item.images[0].src">
+    <v-svg.public v-if="item.route == 'languages'" />
+    <v-svg.account-tree v-else-if="item.route == 'frameworks'" />
+    <v-svg.layers v-else-if="item.route == 'technologies'" />
     <strong>{{ item.name }}</strong>
   </router-link>
 </template>
@@ -14,6 +16,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../../sass/variables';
+
 .item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -28,9 +32,9 @@ export default {
   transition: 0.2s;
   margin-right: 36px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-  img {
-    width: 28px;
-    filter: saturate(0);
+  svg {
+    width: 24px;
+    fill: #ddd;
   }
   strong {
     font-weight: 500;
@@ -43,8 +47,8 @@ export default {
   margin-left: 36px;
   margin-right: 0;
   opacity: 1;
-  img {
-    filter: saturate(1);
+  svg {
+    fill: map-get($map: $color, $key: app-light);
   }
 }
 </style>

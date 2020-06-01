@@ -19,29 +19,14 @@ export default {
         {
           name: 'Idiomas',
           route: 'languages',
-          images: [
-            {
-              src: '/images/vue.png'
-            }
-          ]
         },
         {
           name: 'Frameworks',
           route: 'frameworks',
-          images: [
-            {
-              src: '/images/vue.png'
-            }
-          ]
         },
         {
           name: 'Técnologias',
           route: 'technologies',
-          images: [
-            {
-              src: '/images/vue.png'
-            }
-          ]
         }
       ]
     }
