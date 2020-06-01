@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'layouts.app');
 Route::view('/portfolio', 'layouts.app');
+Route::view('/portfolio/webs', 'layouts.app');
+Route::view('/portfolio/apps', 'layouts.app');
 Route::view('/skills', 'layouts.app');
 Route::view('/skills/languages', 'layouts.app');
 Route::view('/skills/technologies', 'layouts.app');

@@ -20,7 +20,6 @@ a {
 }
 
 body {
-  width: 1105px;
   margin: auto;
   background-color: #fefefe;
   margin-bottom: 128px;
@@ -29,7 +28,6 @@ body {
 .list-item {
   transition: all .3s;
   display: inline-block;
-  margin-right: 10px;
 }
 .list-enter, .list-leave-to
 /* .list-leave-active below version 2.1.8 */ {

@@ -30,6 +30,7 @@ export default {
   position: relative;
   border-radius: 12px;
   transition: 0.1s;
+  margin: auto;
   img {
     width: 100%;
     border-radius: 12px 12px 0 0;

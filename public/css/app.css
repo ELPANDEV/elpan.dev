@@ -19,7 +19,6 @@ a {
 }
 
 body {
-  width: 1105px;
   margin: auto;
   background-color: #fefefe;
   margin-bottom: 128px;
@@ -28,7 +27,6 @@ body {
 .list-item {
   transition: all 0.3s;
   display: inline-block;
-  margin-right: 10px;
 }
 
 .list-enter,

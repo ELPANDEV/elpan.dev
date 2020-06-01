@@ -108,7 +108,11 @@ export default {
 <style lang="scss" scoped>
 .items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 290px);
   gap: 12px;
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>

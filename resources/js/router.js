@@ -8,7 +8,19 @@ export default new VueRouter({
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: require('./pages/portfolio/index').default
+      component: require('./pages/portfolio/index').default,
+      children: [
+        {
+          path: 'webs',
+          name: 'webs',
+          component: require('./pages/portfolio/webs/index').default
+        },
+        {
+          path: 'apps',
+          name: 'apps',
+          component: require('./pages/portfolio/apps/index').default
+        }
+      ]
     },
     {
       path: '/skills',

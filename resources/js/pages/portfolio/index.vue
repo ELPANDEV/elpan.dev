@@ -2,19 +2,15 @@
   <v-body>
     <template slot="sidebar">
       <ul class="technologies">
-        <v-body.portfolio.technology 
+        <v-body.sidebar.item
           v-for="(type, i) in $portfolio.types" 
           :key="i" 
-          :technology="type"
+          :item="type"
         />
       </ul>
     </template>
     <template slot="main">
-      <transition-group name="list" tag="ul" class="proyects">
-        <div class="list-item" v-for="proyect in proyects" :key="proyect.name">
-          <v-body.portfolio.proyect :proyect="proyect" />
-        </div>
-      </transition-group>
+      <router-view />
     </template>
   </v-body>
 </template>
@@ -35,14 +31,12 @@ export default {
 
 <style lang="scss" scoped>
 .technologies {
+  position: fixed;
   display: grid;
   gap: 9px;
   grid-auto-rows: max-content;
-}
-.proyects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 240px));
-  grid-auto-rows: max-content;
-  gap: 16px;
+  @media screen and (min-width: 480px) {
+    position: relative;
+  }
 }
 </style>

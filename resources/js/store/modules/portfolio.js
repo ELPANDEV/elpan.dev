@@ -1,30 +1,51 @@
 export default {
   namespaced: true,
   state: {
-    filter: [],
     types: [
       {
         id: 1,
-        images: [
-          {
-            src: '/images/laravel.png'
-          }
-        ],
-        name: 'Móvil'
+        name: 'Web',
+        route: 'webs'
       },
       {
         id: 2,
-        images: [
-          {
-            src: '/images/vue.png'
-          }
-        ],
-        name: 'Web'
+        name: 'Móvil',
+        route: 'apps'
       }
     ],
-    proyects: [
+    webs: [
       {
-        type: 1,
+        technologies: [
+          {
+            id: 1,
+            images: [
+              {
+                src: '/images/laravel.png'
+              }
+            ],
+            name: 'Laravel'
+          },
+          {
+            id: 2,
+            images: [
+              {
+                src: '/images/vue.png'
+              }
+            ],
+            name: 'Vue'
+          }
+        ],
+        name: 'Receta Ecuatoriana',
+        url: 'https://recetaecuatoriana.net/',
+        images: [
+          {
+            src: '/images/receta-land.jpg'
+          }
+        ]
+      },
+    ],
+    apps: [
+      {
         technologies: [
           {
             id: 1,
@@ -54,37 +75,6 @@ export default {
         ]
       },
       {
-        type: 2,
-        technologies: [
-          {
-            id: 1,
-            images: [
-              {
-                src: '/images/laravel.png'
-              }
-            ],
-            name: 'Laravel'
-          },
-          {
-            id: 2,
-            images: [
-              {
-                src: '/images/vue.png'
-              }
-            ],
-            name: 'Vue'
-          }
-        ],
-        name: 'Receta Ecuatoriana',
-        url: 'https://recetaecuatoriana.net/',
-        images: [
-          {
-            src: '/images/receta-land.jpg'
-          }
-        ]
-      },
-      {
-        type: 1,
         technologies: [
           {
             id: 1,
@@ -114,7 +104,6 @@ export default {
         ]
       },
       {
-        type: 1,
         technologies: [
           {
             id: 3,
@@ -135,10 +124,5 @@ export default {
         ]
       }
     ]
-  },
-  mutations: {
-    reset (state) {
-      state.filter = [state.types[0]]
-    }
   }
 }
