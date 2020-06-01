@@ -3,11 +3,8 @@
     <router-link :to="{ name: 'portfolio' }" :class="this.$route.path.includes('portfolio') ? 'active' : ''">
       {{ $lang.portfolio[$lang.lang] }}
     </router-link>
-    <router-link :to="{ name: 'education' }" :class="this.$route.path.includes('about') ? 'active' : ''">
-      {{ $lang.about[$lang.lang] }}
-    </router-link>
-    <router-link :to="{ name: 'whatsapp' }" :class="this.$route.path.includes('contact') ? 'active' : ''">
-      {{ $lang.contact[$lang.lang] }}
+    <router-link :to="{ name: 'languages' }" :class="this.$route.path.includes('skills') ? 'active' : ''">
+      {{ $lang.skill[$lang.lang] }}
     </router-link>
   </nav>
 </template>

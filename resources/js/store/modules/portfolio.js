@@ -2,7 +2,7 @@ export default {
   namespaced: true,
   state: {
     filter: [],
-    technologies: [
+    types: [
       {
         id: 1,
         images: [
@@ -10,7 +10,7 @@ export default {
             src: '/images/laravel.png'
           }
         ],
-        name: 'Laravel'
+        name: 'Móvil'
       },
       {
         id: 2,
@@ -19,29 +19,12 @@ export default {
             src: '/images/vue.png'
           }
         ],
-        name: 'Vue'
-      },
-      {
-        id: 3,
-        images: [
-          {
-            src: '/images/android.png'
-          }
-        ],
-        name: 'Android'
-      },
-      {
-        id: 4,
-        images: [
-          {
-            src: '/images/unity.png'
-          }
-        ],
-        name: 'Unity'
+        name: 'Web'
       }
     ],
     proyects: [
       {
+        type: 1,
         technologies: [
           {
             id: 1,
@@ -71,6 +54,7 @@ export default {
         ]
       },
       {
+        type: 2,
         technologies: [
           {
             id: 1,
@@ -100,6 +84,7 @@ export default {
         ]
       },
       {
+        type: 1,
         technologies: [
           {
             id: 1,
@@ -129,6 +114,7 @@ export default {
         ]
       },
       {
+        type: 1,
         technologies: [
           {
             id: 3,
@@ -152,7 +138,7 @@ export default {
   },
   mutations: {
     reset (state) {
-      state.filter = [state.technologies[0]]
+      state.filter = [state.types[0]]
     }
   }
 }

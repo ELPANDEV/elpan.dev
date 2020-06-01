@@ -8,9 +8,9 @@ export default {
       es: 'portafolio',
       en: 'portfolio'
     }),
-    about: new Lang({
-      es: 'sobre mi',
-      en: 'about'
+    skill: new Lang({
+      es: 'habilidades',
+      en: 'skills'
     }),
     contact: new Lang({
       es: 'contacto',

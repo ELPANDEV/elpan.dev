@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'layouts.app');
 Route::view('/portfolio', 'layouts.app');
-Route::view('/about', 'layouts.app');
-Route::view('/about/education', 'layouts.app');
-Route::view('/about/experience', 'layouts.app');
+Route::view('/skills', 'layouts.app');
+Route::view('/skills/languages', 'layouts.app');
+Route::view('/skills/technologies', 'layouts.app');
+Route::view('/skills/frameworks', 'layouts.app');
 Route::view('/contact', 'layouts.app');
 Route::view('/contact/whatsapp', 'layouts.app');
 Route::view('/contact/email', 'layouts.app');

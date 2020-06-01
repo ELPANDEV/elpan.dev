@@ -1,7 +1,8 @@
 <template>
-  <header>
+  <header class="header">
     <v-header.slug />
     <v-header.nav />
+    <v-header.contact />
   </header>
 </template>
 
@@ -11,16 +12,24 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-header {
+<style lang="scss">
+@import '../../../sass/variables';
+
+.header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 24px 15%;
-  border-bottom: 1px solid #ddd;
   background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 24px 128px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+  z-index: 9;
+  svg {
+    fill: map-get($map: $color, $key: app-light);
+  }
 }
 </style>

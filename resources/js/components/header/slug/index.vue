@@ -1,7 +1,7 @@
 <template>
   <div class="slug">
-    <strong class="name">Francisco Moncayo</strong>
-    <small class="description">Programador Web desde 2016</small>
+    <v-svg.memory />
+    <strong class="name">el pan dev</strong>
   </div>
 </template>
 
@@ -14,12 +14,20 @@ export default {
 <style lang="scss" scoped>
 .slug {
   display: grid;
-  .name {
-    font-size: 22px;
-    font-weight: 500;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 1px;
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
   }
-  .description {
-    font-size: 12px;
+  .name {
+    font-size: 24px;
+    font-weight: 500;
+    border-right: 1px solid #eee;
+    text-transform: uppercase;
+    padding-right: 12px;
   }
 }
 </style>

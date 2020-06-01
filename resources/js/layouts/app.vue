@@ -1,12 +1,9 @@
 <template>
   <div id="layout">
-    <img class="img" src="https://tstalent.net/site/images/portada.jpg">
     <v-header />
-    <v-body>
-      <transition name="fade" mode="out-in">
-        <router-view/>
-      </transition>
-    </v-body>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -18,19 +15,7 @@ export default {
     ...mapState(['Lang', 'portfolio'])
   },
   created () {
-    this.$portfolio.filter = [this.$portfolio.technologies[2]]
+    this.$portfolio.filter = [this.$portfolio.types[0]]
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.img {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  min-width: 100vh;
-  z-index: -1;
-  opacity: 1;
-}
-</style>

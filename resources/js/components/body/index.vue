@@ -1,6 +1,11 @@
 <template>
   <div class="body">
-    <slot />
+    <div>
+      <slot name="sidebar"/>
+    </div>
+    <main>
+      <slot name="main"/>
+    </main>
   </div>
 </template>
 
@@ -12,6 +17,9 @@ export default {
 
 <style lang="scss" scoped>
 .body {
-  margin-top: calc(103.4px + 48px);
+  margin-top: 156px;
+  display: grid;
+  grid-template-columns: 240px 880px;
+  gap: 24px;
 }
 </style>
