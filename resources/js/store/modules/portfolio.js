@@ -35,8 +35,8 @@ export default {
             name: 'Vue'
           }
         ],
-        name: 'Receta Ecuatoriana',
-        url: 'https://recetaecuatoriana.net/',
+        name: 'Receta Land',
+        url: 'https://receta.land/',
         images: [
           {
             src: '/images/receta-land.jpg'
