@@ -37,10 +37,28 @@ export default {
           rate: 4,
         },
         {
+          name: 'Flutter',
+          images: [
+            {
+              src: '/images/flutter.png'
+            }
+          ],
+          rate: 4,
+        },
+        {
           name: 'React',
           images: [
             {
               src: '/images/react.png'
+            }
+          ],
+          rate: 4,
+        },
+        {
+          name: 'Android',
+          images: [
+            {
+              src: '/images/android.png'
             }
           ],
           rate: 4,
@@ -53,15 +71,6 @@ export default {
             }
           ],
           rate: 3,
-        },
-        {
-          name: 'Android',
-          images: [
-            {
-              src: '/images/android.png'
-            }
-          ],
-          rate: 4,
         }
       ]
     }

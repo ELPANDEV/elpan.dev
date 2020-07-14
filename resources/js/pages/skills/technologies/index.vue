@@ -55,6 +55,15 @@ export default {
           rate: 5
         },
         {
+          name: 'Dart',
+          images: [
+            {
+              src: '/images/dart.png'
+            }
+          ],
+          rate: 4
+        },
+        {
           name: 'Docker',
           images: [
             {
